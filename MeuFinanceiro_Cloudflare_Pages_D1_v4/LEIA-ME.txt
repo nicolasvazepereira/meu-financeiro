@@ -1,0 +1,15 @@
+MEU FINANCEIRO V4 - CLOUDFLARE PAGES + D1
+
+1. Crie um banco D1 chamado meufinanceiro-db no painel Cloudflare.
+2. Execute o conteúdo de schema.sql no console do D1.
+3. No projeto Pages, adicione um binding D1 com nome de variável DB apontando para esse banco.
+4. Publique todo o conteúdo desta pasta, preservando functions/api/[[path]].js.
+5. Faça novo deploy após criar o binding.
+
+IMPORTANTE
+- Os dados ficam no D1. O navegador mantém somente tema e cache da interface.
+- A autenticação usa cookie HttpOnly, Secure e SameSite=Lax.
+- PINs recebem PBKDF2-SHA-256 com salt antes de serem armazenados.
+- Faça testes em Preview e depois em Production. Bindings podem precisar ser configurados nos dois ambientes.
+- A versão inclui layout separado por página e cartões em telas móveis.
+- O pacote não contém credenciais nem database_id da sua conta.
